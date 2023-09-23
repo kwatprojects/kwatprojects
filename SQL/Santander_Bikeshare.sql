@@ -2,7 +2,7 @@
 -- In this project, I analyzed the bikes and station usage. 
 
 
--- What is the total number of rentals by year? 
+-- 1. What is the total number of rentals by year? 
 
 with a AS (
 	SELECT * FROM santander_2016
@@ -21,7 +21,7 @@ GROUP BY year;
 
 
 
--- What is the number of stations, number of docks, and average number of docks by district? 
+-- 2. What is the number of stations, number of docks, and average number of docks by district? 
 
 SELECT a.district
   ,count(*) AS num_station
@@ -36,7 +36,7 @@ ORDER BY 2 DESC;
 
 
 
--- Which are the top 20 most popular stations for bike pickup (start stations), and which districts are they in (2016-2019)? 
+-- 3. Which are the top 20 most popular stations for bike pickup (start stations), and which districts are they in (2016-2019)? 
 
 SELECT *
 FROM (
@@ -84,7 +84,7 @@ ORDER BY tempdf.ranking, tempdf.year;
 
 
 
--- What is the number of bike pickups and average trip duration (mins) by year, month, day of week (dow), and hour?
+-- 4. What is the number of bike pickups and average trip duration (mins) by year, month, day of week (dow), and hour?
 
 SELECT EXTRACT(YEAR FROM start_date) AS year
 	,EXTRACT(MONTH FROM start_date) AS month
@@ -124,8 +124,8 @@ GROUP BY 1,2,3,4
 ORDER BY 1,2,3,4;
 
 
--- During business hours on weekdays, which were the top 10 busiest stations? What was the number of pickups and returns by day, hour for each of these station? 
--- filter: 7-10am, 4-7pm, Mon-Fri, top 10 highest traffic stations
+-- 5. During business hours on weekdays, which were the top 10 busiest stations? What was the number of pickups and returns by day, hour for each of these station? 
+-- filters used: 7-10am, 4-7pm, Mon-Fri, top 10 highest traffic stations
 
 SELECT e.*, f.avg_return, (f.avg_return - e.avg_pickup) AS diff, g.docks, g.docks+(f.avg_return - e.avg_pickup) AS net_docks
 FROM -- Avg pickups by day, hour, station over the year -> e
