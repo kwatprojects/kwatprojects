@@ -1,7 +1,10 @@
 # Data Analytics portfolio
 
 - 👋 Welcome! I am a quantitative researcher transitioned from academia to industry with 6+ years of experience in delivering insights from quantitative and qualitative analyses.
-I am proficient in R, SQL, Excel, and Tableau; and skilled in reporting results and insights in written reports and presentations.
+
+- 💪 I am proficient in R, SQL, Excel, and Tableau; and skilled in reporting results and insights in written reports and presentations.
+
+- 👀 I am currently look for a position in data analytics or quantitative UX research, where I can utilize my skillsets to help teams and companies make informed decisions.
 
 - 💼 My most recent position as a UX research assistant with Meta allowed me to practice these skills in business use cases. I have demonstrated the ability to analyze complex datasets, build dashboards and present valuable insights. 
 
