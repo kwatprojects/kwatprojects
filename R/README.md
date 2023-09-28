@@ -3,6 +3,7 @@
 
 👩‍💻 R is where my data analytics journey started! I have used R for 
 - Data cleaning
+- Data merging
 - Data analysis
 - Statistical analysis
 - Data visualization
