@@ -1,4 +1,4 @@
-Exploring and Wrangling Fitbit data
+Exploring and Wrangling Fitbit data - Activity
 ================
 Katie Wat
 2023-09-27
